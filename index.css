@@ -63,7 +63,7 @@ nav ul{
 #welcome .sma .fab, #welcome .sma .fas{
     color: #000;
 }
-#welcome .sma .fab:hover, #welcome .sma .fa:hover{
+#welcome .sma .fab:hover, #welcome .sma .fas:hover{
     color: var(--secondary);
 }
 
@@ -71,6 +71,12 @@ nav ul{
 #articles, #storytelling {
     width: 90%;
     margin: 2rem auto 0;
+}
+#articles a, #storytelling a{
+    color: #000;
+}
+#articles a:hover, #storytelling a:hover{
+    color: #125D98;
 }
 #articles .sectionTitle, #storytelling .sectionTitle{
     font-family: 'Sacramento', cursive;
@@ -141,7 +147,7 @@ nav ul{
     display: block;
     margin: 0.25rem auto;
     padding: 0.5rem 1rem;
-    width: 60%;
+    width: 65%;
     font-family: 'Lato', sans-serif;
     border: var(--primary) solid 2px;
 }
@@ -150,7 +156,7 @@ nav ul{
     display: block;
     margin: 0.25rem auto;
     padding: 0.25rem 1rem;
-    width: 70%;
+    width: 75%;
     font-family: 'Lato', sans-serif;
     font-weight: bolder;
     background-color: var(--primary);
@@ -176,18 +182,18 @@ nav ul{
 #end-container h1{
     margin: 0.125rem 0;
     font-family: 'Sacramento', cursive;
-    font-size: 2.5rem; 
+    font-size: 2.75rem; 
 }
 #end-container h1 span{
     color: var(--secondary);
 }
 #end-container p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 #end-container p span{
     font-family: 'Sacramento', cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 #end-container .end-signup{
     margin: 0.5rem auto;
@@ -200,3 +206,4 @@ nav ul{
     color: #FFF;
     font-weight: bold;
 }
+
