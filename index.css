@@ -1,0 +1,295 @@
+:root{
+    --primary: #03FF50;
+    --secondary: #90AEFF;
+}
+
+/* reset */
+body,p,a,ul,li,h3,h1{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden; 
+    /* To solve this problem at the source, try the following: <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> */
+}
+li {
+    list-style-type: none;
+}
+/* base styles */
+body{
+    /* background: url("reso/dotted-pattern-F4F9F9.svg"); */
+    font-family: 'Lora', serif;
+    /* background-color: #F4F9F9; */
+}
+/* mobile styles */
+#header {
+    height: 100vh;
+    background-image: url("reso/bird-branch-05192d.svg"), url("reso/wave[1].svg");
+    background-position: right bottom, bottom ;
+    background-size: 70%, 100%;
+    background-repeat: no-repeat;
+}
+
+/* animation below on navbar */
+.navbar{
+    height: 10vh;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.hambar{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 30%;
+    transform: translate(-5%, -50%) ;
+    z-index: 2;
+}
+.nav-list {
+    text-align: center;
+    border: #05192D 2px solid;
+    border-radius: 5px;
+    background-color: #FFF;
+
+    position: absolute;
+    height: 45vh;
+    width: 50%;
+    top: 70%;
+    right: -100%;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+    /* pointer-events: none; */
+}
+/* .nav-list a{
+    color: #000;
+} */
+.navbar .nav-list li{
+    padding: 0.75rem 1rem;
+}
+.open{
+   right: 0;
+}
+/* no animation */
+.logo-container h3{
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: #05192d;
+}
+.logo-container span{
+    color: var(--primary)
+}
+.navbar a{
+    font-size: 1.2rem;
+    color: #05192d;
+    font-family: 'Nunito', sans-serif; 
+}
+.log-sign a{
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #000;
+    /* border-radius: 5px; */
+    border-bottom: none;
+}
+.log-sign .a-one{
+    background-color: var(--primary);
+}
+.log-sign .a-two{
+    background-color: var(--secondary);
+}
+
+#header .welcome-msg{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+.welcome-msg .welcome{
+    margin: auto auto 0;
+    font-size: 1.5rem;
+}
+
+.welcome-msg .sma p{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #05192d;
+    margin-top: 0.5rem;
+}
+.welcome-msg .sma ul{
+    margin-top: 0.25rem0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+}
+.welcome-msg .sma a{
+    margin-right: 1.5rem;
+    color: #05192d;
+}
+.welcome-msg .sma a:hover{
+    color: var(--primary);
+}
+
+/* section-article */
+#articles-section{
+    padding: 1rem 0;
+}
+#articles-section .articles{
+    width: 80%;
+    margin: auto;
+}
+#articles-section a{
+    color: #000;
+}
+#articles-section a:hover{
+    color: #11698E;
+}
+.articles .section-heading{
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+.articles .section-heading .fas{
+    color: var(--primary);
+}
+.articles .grid-container{
+    margin: 0.75rem auto;
+    padding-bottom: 0.5rem;
+    display: block;
+}
+.articles .article-image{
+    width: 100%;
+}
+.articles .article-container .article-para{
+    display: none;
+}
+.articles .article-image img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.articles .article-container h1{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+.articles .article-container .dateAndtime{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+#articles-section .seemore{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.seemore .seemore-para{
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+.seemore .seemore-link{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    font-weight: 700;
+}
+.seemore .seemore-link:hover{
+    background-color: rgba(3, 255, 80, 0.5);
+}
+
+/* scribble-section */
+#scribble-section{
+    padding: 1rem 0;
+} 
+#scribble-section .articles{
+    width: 80%;
+    margin: auto;
+}
+#scribble-section a{
+    color: #000;
+}
+#scribble-section a:hover{
+    color: #11698E;
+}
+#scribble-section .seemore{
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* notifyletter */
+#notifyletter{
+    margin:auto;
+    padding: 2rem 0;
+}
+#notifyletter .letter{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border:rgba(3, 255, 80, 0.5) solid 2px;
+}
+.letter .letter-heading{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.letter .letter-heading .fas{
+    color: var(--primary);
+}
+.letter .letter-msg{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.letter .letter-form{
+    font-family: 'Lato', sans-serif;
+}
+.letter .letter-form input{
+    display: block;
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+    width: 80%;
+    border: var(--primary) 2px solid;
+    /* border-radius: 5px; */
+}
+.letter .letter-form .email-btn{
+    display: block;
+    margin: 0.25rem 0;
+    padding: 0.4rem;
+    width: 60%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: var(--primary) 2px solid;
+    font-weight: bold;
+}
+.letter .letter-form .email-btn:hover{
+    background-color: rgba(3, 255, 80, 0.5);
+}
+
+/* footer-section */
+#footer-section{
+    background-color: #05192d;
+    padding: 1rem 0 0.5rem 0;
+    color: #FFF;
+}
+#footer-section .footer-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.footer-container p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.footer-container .footer-signup{
+    padding: 0.25rem 1rem;
+    background-color: #FFF;
+    border: #FFF solid 2px;
+    /* border-radius: 10px; */
+    font-weight: 700;
+    color: #05192d;
+    font-family: 'Nunito', sans-serif;
+}
+.footer-container .footer-signup:hover{
+    background-color: var(--secondary);
+    border: var(--secondary) solid 2px;
+}
+.footer-container .copyright{
+    margin-top: 1rem;
+    color: #FFF;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+}
